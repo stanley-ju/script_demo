@@ -29,6 +29,8 @@ async function run() {
     const fileTree = generateFileTree(pathToScan);
     core.setOutput('file-tree', fileTree.join('\n'));
     console.log(fileTree.join('\n'));
+
+    console.log('Hello World');
   } catch (error) {
     core.setFailed(error.message);
   }
