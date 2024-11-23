@@ -1,0 +1,20 @@
+{
+    "name": "file-tree-action",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "package": "ncc build dist/index.js -o dist-action",
+        "all": "npm run build && npm run package"
+    },
+    "dependencies": {
+        "@actions/core": "^1.2.6",
+        "@actions/github": "^4.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.9.3",
+        "@vercel/ncc": "^0.38.3",
+        "typescript": "^4.0.3"
+    }
+}
