@@ -1,0 +1,10 @@
+name: 'File Tree Action'
+description: 'Outputs a file tree of the specified path'
+inputs:
+  path:
+    description: 'Path to output the file tree for'
+    required: true
+    default: './'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
